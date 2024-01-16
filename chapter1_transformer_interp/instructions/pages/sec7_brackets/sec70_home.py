@@ -166,7 +166,7 @@ from part7_balanced_bracket_classifier.brackets_datasets import SimpleTokenizer,
 
 MAIN = __name__ == "__main__"
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 ```
 
 """, unsafe_allow_html=True)

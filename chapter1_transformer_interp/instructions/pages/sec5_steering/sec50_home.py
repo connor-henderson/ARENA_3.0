@@ -139,7 +139,7 @@ import logging, warnings
 logging.disable(sys.maxsize)
 warnings.filterwarnings('ignore', category=UserWarning, module='huggingface_hub.utils._token')
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 t.set_grad_enabled(False);
 
@@ -153,7 +153,7 @@ from plotly_utils import imshow
 import part5_function_vectors_and_model_steering.solutions as solutions
 import part5_function_vectors_and_model_steering.tests as tests
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 MAIN = __name__ == '__main__'
 ```

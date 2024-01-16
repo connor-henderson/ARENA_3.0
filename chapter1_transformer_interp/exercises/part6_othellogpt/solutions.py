@@ -48,7 +48,7 @@ from plotly_utils import imshow
 from neel_plotly import scatter, line
 import part6_othellogpt.tests as tests
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 t.set_grad_enabled(False)
 

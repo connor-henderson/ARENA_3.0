@@ -14,7 +14,7 @@ from part7_balanced_bracket_classifier.brackets_datasets import BracketsDataset
 # ipython.magic("autoreload 2")
 
 MAIN = __name__ == "__main__"
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 t.set_grad_enabled(False)
 

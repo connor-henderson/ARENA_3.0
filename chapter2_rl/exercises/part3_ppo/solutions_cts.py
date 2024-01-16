@@ -41,7 +41,7 @@ RUN_TRAINING = ["Pendulum"]
 
 Arr = np.ndarray
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 MAIN = __name__ == "__main__"
 

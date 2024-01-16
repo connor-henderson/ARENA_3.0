@@ -40,7 +40,7 @@ import part2_q_learning_and_dqn.utils as utils
 import part2_q_learning_and_dqn.tests as tests
 from plotly_utils import line, cliffwalk_imshow, plot_cartpole_obs_and_dones
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 MAIN = __name__ == "__main__"
 

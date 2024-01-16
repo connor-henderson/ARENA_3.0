@@ -47,7 +47,7 @@ from part2_cnns.solutions_bonus import (
 
 MAIN = __name__ == "__main__"
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 # Define what to train when running through this file
 TRAIN = []

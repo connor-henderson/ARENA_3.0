@@ -92,7 +92,7 @@ from part2_cnns.solutions_bonus import get_resnet_for_feature_extraction
 from part3_optimization.utils import plot_fn, plot_fn_with_points
 import part3_optimization.tests as tests
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 MAIN = __name__ == "__main__"
 ```

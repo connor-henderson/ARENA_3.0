@@ -3,7 +3,7 @@ import numpy as np
 from typing import Optional, List
 from transformer_lens import HookedTransformer, HookedTransformerConfig
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 def create_model(
     d_vocab: int,

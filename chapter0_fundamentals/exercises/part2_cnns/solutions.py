@@ -163,7 +163,7 @@ def get_mnist(subset: int = 1):
 
     return mnist_trainset, mnist_testset
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 @dataclass
 class SimpleMLPTrainingArgs():

@@ -26,7 +26,7 @@ from plotly_utils import imshow, line, bar
 import part2_cnns.tests as tests
 from part2_cnns.solutions import ResNet34, copy_weights, Linear, IMAGENET_TRANSFORM
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 MAIN = __name__ == "__main__"
 

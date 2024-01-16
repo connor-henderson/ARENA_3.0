@@ -186,7 +186,7 @@ large_root = (section_dir / 'Grokking' / 'large_files').resolve()
 from part8_grokking_and_modular_arithmetic.my_utils import *
 import part8_grokking_and_modular_arithmetic.tests as tests
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 t.set_grad_enabled(False)
 

@@ -34,7 +34,7 @@ import part2_intro_to_mech_interp.tests as tests
 # Saves computation time, since we don't need it for the contents of this notebook
 t.set_grad_enabled(False)
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 MAIN = __name__ == "__main__"
 

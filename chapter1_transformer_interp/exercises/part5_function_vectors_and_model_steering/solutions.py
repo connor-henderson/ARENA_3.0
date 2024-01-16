@@ -14,7 +14,7 @@ from torch import Tensor
 import einops
 from collections import defaultdict
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 t.set_grad_enabled(False);
 

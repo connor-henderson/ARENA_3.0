@@ -9,7 +9,7 @@ from typing import Type
 
 from part1_intro_to_rl.utils import make_env, set_seed
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 def test_linear_schedule(my_linear_schedule):
     from part2_q_learning_and_dqn.solutions import linear_schedule
@@ -90,7 +90,7 @@ def test_replay_buffer_wraparound(
 def test_epsilon_greedy_policy(my_epsilon_greedy_policy):
     from part2_q_learning_and_dqn.solutions import QNetwork, epsilon_greedy_policy
 
-    device = t.device("cuda" if t.cuda.is_available() else "cpu")
+    device = t.device("cuda" if t.cuda.is_available() else "mps")
     envs = gym.vector.SyncVectorEnv([make_env("CartPole-v1", 0, 0, False, "test_eps_greedy_policy") for _ in range(5)])
 
     num_observations = np.array(envs.single_observation_space.shape, dtype=int).prod()

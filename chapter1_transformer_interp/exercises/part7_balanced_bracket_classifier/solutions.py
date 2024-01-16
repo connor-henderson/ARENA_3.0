@@ -35,7 +35,7 @@ from plotly_utils import hist, bar, imshow
 import part7_balanced_bracket_classifier.tests as tests
 from part7_balanced_bracket_classifier.brackets_datasets import SimpleTokenizer, BracketsDataset
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 MAIN = __name__ == "__main__"
 

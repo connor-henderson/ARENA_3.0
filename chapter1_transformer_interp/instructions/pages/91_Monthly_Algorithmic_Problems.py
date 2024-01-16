@@ -150,7 +150,7 @@ from monthly_algorithmic_problems.july23_palindromes.dataset import PalindromeDa
 from monthly_algorithmic_problems.july23_palindromes.model import create_model
 from plotly_utils import hist, bar, imshow
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 ```
 
 ## Task & Dataset
@@ -1124,7 +1124,7 @@ from monthly_algorithmic_problems.august23_unique_char.dataset import UniqueChar
 from monthly_algorithmic_problems.august23_unique_char.model import create_model
 from plotly_utils import hist, bar, imshow
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 ```
 
 ## Task & Dataset
@@ -1360,7 +1360,7 @@ from monthly_algorithmic_problems.august23_unique_char.model import create_model
 from monthly_algorithmic_problems.august23_unique_char.dataset import UniqueCharDataset, find_first_unique
 from plotly_utils import imshow
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 dataset = UniqueCharDataset(size=1000, vocab=list("abcdefghij"), seq_len=20, seed=42)
 ```
@@ -2030,7 +2030,7 @@ from monthly_algorithmic_problems.september23_sum.dataset import SumDataset
 from monthly_algorithmic_problems.september23_sum.model import create_model
 from plotly_utils import hist, bar, imshow
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 ```
 
 ## Task & Dataset
@@ -2270,7 +2270,7 @@ from monthly_algorithmic_problems.september23_sum.model import create_model
 from monthly_algorithmic_problems.september23_sum.dataset import SumDataset
 from plotly_utils import imshow
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 dataset = SumDataset(size=1000, num_digits=4, seed=42).to(device)
 N = len(dataset)
@@ -3127,7 +3127,7 @@ from monthly_algorithmic_problems.october23_sorted_list.dataset import SortedLis
 from monthly_algorithmic_problems.october23_sorted_list.model import create_model
 from plotly_utils import hist, bar, imshow
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 ```
 
 ## Task & Dataset
@@ -3361,7 +3361,7 @@ from monthly_algorithmic_problems.october23_sorted_list.training import train, T
 from monthly_algorithmic_problems.october23_sorted_list.dataset import SortedListDataset
 from plotly_utils import hist, bar, imshow
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 
 def show_multiple(dataset: SortedListDataset):
     '''
@@ -3925,7 +3925,7 @@ from monthly_algorithmic_problems.november23_cumsum.dataset import CumsumDataset
 from monthly_algorithmic_problems.november23_cumsum.model import create_model
 from plotly_utils import hist, bar, imshow
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 ```
 
 ## Task & Dataset
@@ -4123,7 +4123,7 @@ from monthly_algorithmic_problems.november23_cumsum.model import create_model
 from monthly_algorithmic_problems.november23_cumsum.dataset import CumsumDataset
 from plotly_utils import imshow
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 ```
 
 ## Summary of how the model works
@@ -4572,7 +4572,7 @@ from monthly_algorithmic_problems.january24_caesar_cipher.training import train,
 from monthly_algorithmic_problems.january24_caesar_cipher.dataset import CodeBreakingDataset
 from plotly_utils import imshow
 
-device = t.device("cuda" if t.cuda.is_available() else "cpu")
+device = t.device("cuda" if t.cuda.is_available() else "mps")
 ```
 
 ## Model
